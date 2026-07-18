@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Build income with the skill you already have | Rebecca</title>
+  <meta name="description" content="Real AI tools to build income with the skill you already have, on the side of the job you already have. Built by a strategist with 15 years of receipts. Tested on my own paycheck first." />
+
+  <!-- Open Graph (for the bio-link preview) -->
+  <meta property="og:title" content="Build income with the skill you already have." />
+  <meta property="og:description" content="Real AI tools to build income on the side of the job you already have. Tested on my own paycheck first. Flops included." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts: Fraunces (display serif) + Inter (body). Max 2 families. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            paper: '#faf7f2',    // warm off-white
+            ink: '#1c1a17',      // near-black
+            forest: '#1f4d3a',   // single accent: deep green
+            forestdark: '#173d2e',
+            muted: '#6b6459',
+            line: '#e7e0d5',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-display { font-family: 'Fraunces', Georgia, serif; }
+    /* Big, comfortable tap targets everywhere */
+    a.btn { min-height: 52px; }
+  </style>
+</head>
+
+<body class="bg-paper text-ink antialiased">
+
+  <!-- ============ 1. HERO ============ -->
+  <header class="px-5 pt-12 pb-10 sm:pt-16">
+    <div class="mx-auto max-w-[640px]">
+
+      <!-- Small photo of Rebecca -->
+      <div class="mb-7 flex items-center gap-4">
+        <img
+          src="data:image/jpeg;base64,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"
+          alt="Rebecca"
+          loading="lazy"
+          width="72" height="72"
+          class="h-[72px] w-[72px] rounded-full object-cover border border-line bg-line"
+        />
+        <div class="leading-tight">
+          <p class="font-medium text-ink">Rebecca</p>
+          <p class="text-sm text-muted">AI income strategist</p>
+        </div>
+      </div>
+
+      <h1 class="font-display text-[2.6rem] leading-[1.05] tracking-tight text-ink sm:text-6xl">
+        Build income with the skill you already have.
+      </h1>
+
+      <p class="mt-6 text-lg leading-relaxed text-muted">
+        No new degree, no quitting your job, no code. The AI tools I use to build
+        income on the side of a demanding job, tested on my own paycheck first.
+        Start with the free kit.
+      </p>
+
+      <!-- PRIMARY CTA: capture email, deliver the kit instantly -->
+      <form id="kitForm" class="mt-8" novalidate>
+        <div class="flex flex-col gap-3 sm:flex-row">
+          <input id="kitEmail" type="email" required autocomplete="email" placeholder="Your email"
+            class="min-h-[52px] flex-1 rounded-full border border-line bg-white px-6 text-base text-ink placeholder:text-muted focus:border-forest focus:outline-none focus:ring-2 focus:ring-forest/20" />
+          <button type="submit"
+            class="btn inline-flex items-center justify-center rounded-full bg-forest px-7 text-base font-semibold text-paper transition-colors hover:bg-forestdark">
+            Send me the free kit
+          </button>
+        </div>
+        <p id="kitNote" class="mt-3 text-sm text-muted">22 prompts to find your highest-paid skill, plus my AI cheat sheet. Instant access, no spam.</p>
+      </form>
+
+      <div id="kitSuccess" class="mt-8 hidden rounded-2xl border border-forest bg-forest/[0.05] p-6">
+        <p class="font-display text-xl text-ink">You're in. Here's your kit.</p>
+        <p class="mt-2 text-sm text-muted">Open these now, no inbox-digging required.</p>
+        <div class="mt-4 flex flex-col gap-3 sm:flex-row">
+          <a href="https://seedscale.agency/starter-kit.html" class="btn inline-flex items-center justify-center rounded-full bg-forest px-6 text-sm font-semibold text-paper hover:bg-forestdark">Open the AI Starter Kit</a>
+          <a href="https://seedscale.agency/ai-playbook.html" class="btn inline-flex items-center justify-center rounded-full border border-forest px-6 text-sm font-semibold text-forest hover:bg-forest/5">Read the AI Playbook</a>
+        </div>
+      </div>
+
+      <a href="#shelf" class="mt-4 inline-block text-sm font-medium text-forest underline decoration-forest/30 underline-offset-4 hover:decoration-forest">Prefer to browse everything first?</a>
+    </div>
+  </header>
+
+  <!-- ============ 1b. PROOF BAR (her experience is the proof) ============ -->
+  <section class="px-5 py-8">
+    <div class="mx-auto max-w-[640px] border-t border-line pt-8">
+      <p class="text-sm leading-relaxed text-muted">
+        Why listen to me: for 15 years I built the marketing engines behind some of
+        the biggest mission-driven brands online. Now I use the same playbook for
+        individuals, starting with my own paycheck.
+      </p>
+      <div class="mt-6 grid grid-cols-2 gap-y-6 gap-x-4 sm:grid-cols-4">
+        <div>
+          <p class="font-display text-2xl leading-none text-forest sm:text-3xl">15 yrs</p>
+          <p class="mt-1.5 text-xs leading-snug text-muted">building marketing engines</p>
+        </div>
+        <div>
+          <p class="font-display text-2xl leading-none text-forest sm:text-3xl">10M+</p>
+          <p class="mt-1.5 text-xs leading-snug text-muted">subscribers built</p>
+        </div>
+        <div>
+          <p class="font-display text-2xl leading-none text-forest sm:text-3xl">Billions</p>
+          <p class="mt-1.5 text-xs leading-snug text-muted">of views generated</p>
+        </div>
+        <div>
+          <p class="font-display text-2xl leading-none text-forest sm:text-3xl">$15M+</p>
+          <p class="mt-1.5 text-xs leading-snug text-muted">raised a year for clients</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 2. THE PROBLEM ============ -->
+  <section class="px-5 py-10">
+    <div class="mx-auto max-w-[640px] border-t border-line pt-10">
+      <p class="text-xl leading-relaxed text-ink sm:text-2xl">
+        You already have a skill people would pay for. You just haven't found the
+        words for it, the price for it, or the five spare minutes to set it up
+        between work and the kids.
+      </p>
+      <p class="mt-5 text-xl leading-relaxed text-forest sm:text-2xl">
+        So I built the tools I wished existed, and used them on my own life first.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 3. THE STOREFRONT ============ -->
+  <section id="shelf" class="px-5 py-10 scroll-mt-6">
+    <div class="mx-auto max-w-[640px]">
+
+      <!-- FREE -->
+      <div id="free" class="scroll-mt-6">
+        <p class="text-sm font-semibold uppercase tracking-wide text-forest">Free to start</p>
+        <div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <a href="https://seedscale.agency/ai-playbook.html"
+             class="group flex flex-col rounded-xl border border-line bg-white/60 p-5 transition-colors hover:border-forest">
+            <h3 class="font-display text-xl leading-snug text-ink">The AI Playbook</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-muted">
+              Six chapters on finding your highest-paid skill, building leverage, and creating income on your own terms. Start here if you don't know which skill is worth the most.
+            </p>
+            <span class="mt-4 text-sm font-semibold text-forest group-hover:underline underline-offset-4">Read it free</span>
+          </a>
+          <a href="https://seedscale.agency/starter-kit.html"
+             class="group flex flex-col rounded-xl border border-line bg-white/60 p-5 transition-colors hover:border-forest">
+            <h3 class="font-display text-xl leading-snug text-ink">The AI Starter Kit</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-muted">
+              22 prompts to find your highest-paid skill and negotiate your worth, plus my ChatGPT and Claude cheat sheet.
+            </p>
+            <span class="mt-4 text-sm font-semibold text-forest group-hover:underline underline-offset-4">Get the kit free</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- $9 PROMPT PACKS -->
+      <div class="mt-12">
+        <p class="text-sm font-semibold uppercase tracking-wide text-forest">Prompt packs, $9 each</p>
+        <div class="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <a href="https://buy.stripe.com/8x29AVgeTddX9Ki0ng0Ny0b"
+             class="group flex flex-col rounded-xl border border-line bg-white/60 p-5 transition-colors hover:border-forest">
+            <h3 class="font-display text-xl leading-snug text-ink">The Career Mode Pack</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-muted">
+              Ten ChatGPT modes that become your career team: salary negotiator, recruiter, interviewer, strategist, and six more. Installs in five minutes on free ChatGPT.
+            </p>
+            <span class="mt-4 text-sm font-semibold text-forest group-hover:underline underline-offset-4">Get it ($9)</span>
+          </a>
+          <a href="https://buy.stripe.com/3cI28t2o33Dn5u22vo0Ny0c"
+             class="group flex flex-col rounded-xl border border-line bg-white/60 p-5 transition-colors hover:border-forest">
+            <h3 class="font-display text-xl leading-snug text-ink">The Income Mode Pack</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-muted">
+              Ten modes to build income on the side: idea strategist, market researcher, offer builder, and a 90-day plan.
+            </p>
+            <span class="mt-4 text-sm font-semibold text-forest group-hover:underline underline-offset-4">Get it ($9)</span>
+          </a>
+          <a href="https://buy.stripe.com/8x24gBfaPfm56y6da20Ny07"
+             class="group flex flex-col rounded-xl border border-line bg-white/60 p-5 transition-colors hover:border-forest">
+            <h3 class="font-display text-xl leading-snug text-ink">Get Paid for What You Know</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-muted">
+              50 prompts to find the skill people will pay for, package it, price it, and land your first client.
+            </p>
+            <span class="mt-4 text-sm font-semibold text-forest group-hover:underline underline-offset-4">Get it ($9)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- $27 GUIDE — flagship -->
+      <div class="mt-12">
+        <p class="text-sm font-semibold uppercase tracking-wide text-forest">If you only get one thing, get this</p>
+        <div class="mt-5 grid grid-cols-1 gap-4">
+          <a href="https://buy.stripe.com/dRm9AV7In8XH9Ki6LE0Ny06"
+             class="group relative flex flex-col rounded-2xl border-2 border-forest bg-forest/[0.04] p-6 shadow-sm transition-colors hover:bg-forest/[0.07] sm:p-8">
+            <span class="mb-3 inline-flex w-fit items-center rounded-full bg-forest px-3 py-1 text-xs font-semibold uppercase tracking-wide text-paper">The full system</span>
+            <h3 class="font-display text-2xl leading-snug text-ink sm:text-3xl">The AI Business Blueprint</h3>
+            <p class="mt-3 flex-1 text-base leading-relaxed text-muted">
+              The free guides show you the what. This is the how. 13 chapters on building a digital business with AI: the content engine, a social lead engine, and your first product, even if you have never written code. Includes every prompt, template, and a 30-day plan.
+            </p>
+            <span class="mt-5 inline-flex w-fit items-center justify-center rounded-full bg-forest px-6 py-3 text-base font-semibold text-paper transition-colors group-hover:bg-forestdark">Get the blueprint ($27)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- 1:1 -->
+      <div id="work" class="mt-12 scroll-mt-6">
+        <p class="text-sm font-semibold uppercase tracking-wide text-forest">Work with me, 1:1</p>
+        <div class="mt-5 grid grid-cols-1 gap-4">
+          <a href="https://buy.stripe.com/bJeeVfaUz8XH6y6fia0Ny08"
+             class="group flex flex-col rounded-xl border border-line bg-white/60 p-5 transition-colors hover:border-forest">
+            <h3 class="font-display text-xl leading-snug text-ink">AI Career Strategy Session</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-muted">
+              60 minutes, one on one. I map AI to the skill you already have and hand you a 90-day plan you can execute. You leave with your highest-value skill mapped, a tool stack built for you, the recording, and a written summary.
+            </p>
+            <span class="mt-4 text-sm font-semibold text-forest group-hover:underline underline-offset-4">Book a session ($297)</span>
+          </a>
+          <a href="https://buy.stripe.com/00wcN79QvddX3lU7PI0Ny09"
+             class="group flex flex-col rounded-xl border border-line bg-white/60 p-5 transition-colors hover:border-forest">
+            <h3 class="font-display text-xl leading-snug text-ink">Social &amp; Marketing Strategy Session</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-muted">
+              60 minutes, one on one. I audit your content, lock your positioning, and build a 30-day calendar with hooks and CTAs ready to use. Recording and written summary within 48 hours.
+            </p>
+            <span class="mt-4 text-sm font-semibold text-forest group-hover:underline underline-offset-4">Book a session ($297)</span>
+          </a>
+          <a href="https://buy.stripe.com/fZu00l6Ej2zj6y6da20Ny0a"
+             class="group flex flex-col rounded-xl border border-line bg-white/60 p-5 transition-colors hover:border-forest">
+            <h3 class="font-display text-xl leading-snug text-ink">Monthly Coaching</h3>
+            <p class="mt-2 flex-1 text-sm leading-relaxed text-muted">
+              Stop making decisions alone. Two 60-minute calls a month plus async Slack and email support, built around your goals. Cancel anytime, no contract.
+            </p>
+            <span class="mt-4 text-sm font-semibold text-forest group-hover:underline underline-offset-4">Start coaching ($997/mo)</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ 6. WHO'S BEHIND THIS ============ -->
+  <section class="px-5 py-10">
+    <div class="mx-auto max-w-[640px] border-t border-line pt-10">
+      <h2 class="font-display text-2xl leading-tight text-ink sm:text-3xl">Who's behind this</h2>
+      <div class="mt-5 space-y-4 text-base leading-relaxed text-muted">
+        <p class="text-ink">
+          I have a demanding job and two kids, and this year I started building
+          income on the side with the exact tools on this page. I test everything on
+          my own paycheck before it ends up here.
+        </p>
+        <p>
+          Before this, I spent 15 years building digital platforms for
+          mission-driven organizations: billions of views, tens of millions of
+          followers, a fundraising program doubled from $7M to $14M. I used to find
+          hidden revenue for organizations. Now I do it for individuals, starting
+          with myself. I used this approach in my own negotiation this year, and it
+          ended with a raise and a title change.
+        </p>
+      </div>
+      <p class="mt-6 text-sm text-muted">
+        Organizations can find my agency work at
+        <a href="https://seedscale.agency" class="text-forest underline decoration-forest/30 underline-offset-4 hover:decoration-forest">seedscale.agency</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 8. TRUST FOOTER ============ -->
+  <section class="px-5 py-10">
+    <div class="mx-auto max-w-[640px]">
+      <div class="rounded-2xl border border-line bg-white/60 p-6 sm:p-9">
+        <h2 class="font-display text-xl leading-tight text-ink sm:text-2xl">How I do proof</h2>
+        <p class="mt-4 text-base leading-relaxed text-muted">
+          No fake screenshots. No income promises. I run every experiment on myself
+          before I recommend it, I share results in percentages because coworkers
+          follow me, and I post the failures next to the wins. When buyers start
+          reporting results, they'll appear here, with permission, anonymized.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STANDARD FOOTER ============ -->
+  <footer class="px-5 pb-14 pt-6">
+    <div class="mx-auto max-w-[640px] border-t border-line pt-8">
+      <div class="flex flex-col gap-3 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
+        <div class="flex flex-wrap items-center gap-x-5 gap-y-2">
+          <a href="https://instagram.com/rebecca.builds" class="text-forest underline decoration-forest/30 underline-offset-4 hover:decoration-forest">@rebecca.builds</a>
+        </div>
+        <p class="text-muted">Digital products deliver instantly. Sessions and coaching are booked after checkout.</p>
+      </div>
+      <p class="mt-6 text-xs text-muted">© <span id="year">2026</span> Rebecca.</p>
+    </div>
+  </footer>
+
+  <!-- Klaviyo onsite (Seedscale account TipqN2) -->
+  <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/TipqN2/klaviyo.js?company_id=TipqN2"></script>
+
+  <script>
+    // Keep the copyright year current without a build step.
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Free-kit capture: subscribe to the rebecca.builds Free Shelf list, then deliver instantly.
+    (function () {
+      var form = document.getElementById('kitForm');
+      var success = document.getElementById('kitSuccess');
+      if (!form) return;
+
+      function deliver() {
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var input = document.getElementById('kitEmail');
+        var email = (input.value || '').trim();
+        if (!email || email.indexOf('@') === -1) {
+          input.focus();
+          return;
+        }
+        var btn = form.querySelector('button');
+        btn.textContent = 'Sending...';
+        btn.disabled = true;
+
+        fetch('https://a.klaviyo.com/client/subscriptions/?company_id=TipqN2', {
+          method: 'POST',
+          headers: { 'revision': '2024-10-15', 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            data: {
+              type: 'subscription',
+              attributes: {
+                custom_source: 'rebecca.builds — free kit',
+                profile: {
+                  data: {
+                    type: 'profile',
+                    attributes: {
+                      email: email,
+                      properties: {
+                        signup_source: 'rebecca.builds',
+                        lead_magnet: 'AI Starter Kit'
+                      }
+                    }
+                  }
+                }
+              },
+              relationships: { list: { data: { type: 'list', id: 'RMKQf3' } } }
+            }
+          })
+        })
+          .then(deliver)
+          // Never trap the reader: deliver the kit even if the subscribe call fails.
+          .catch(deliver);
+      });
+    })();
+  </script>
+</body>
+</html>
